@@ -10,8 +10,8 @@ AddEventHandler('PoliceID:open', function(data)
 end)
 
 --Commands
-
-RegisterCommand("Showpoliceid", function(source)
+RegisterNetEvent('PoliceID:show')
+AddEventHandler("PoliceID:show", function(source)
 		if(getplayerjob() == 'police') then--change
 			local ped = GetPedInFront()
 			if ped ~= 0 then
@@ -26,7 +26,7 @@ RegisterCommand("Showpoliceid", function(source)
 				--notarget
 			end
 		end
-	end, false)
+	end)
 
 
 
