@@ -22,6 +22,7 @@ p {
   height: 272px;
   padding: 54px 17px 10px 144px;
   background: url("../images/brickan_rounded.png");
+  border-radius: 10px;
 }
 img {
   position: absolute;
